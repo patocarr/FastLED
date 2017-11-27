@@ -67,8 +67,10 @@ public:
 
 #pragma message "FastLED Adafruit CircuitPlaygroundExpress"
 
-#define MAX_PIN 3
-_DEFPIN_ARM( 6, 0, 5); _DEFPIN_ARM( 8, 1, 23); _DEFPIN_ARM( 9, 0, 6);
+#define MAX_PIN 10
+_DEFPIN_ARM( 0, 1, 9); _DEFPIN_ARM( 1, 1, 8); _DEFPIN_ARM( 2, 1, 2); _DEFPIN_ARM( 3, 1, 3); 
+_DEFPIN_ARM( 6, 0, 5); _DEFPIN_ARM( 8, 1, 23); _DEFPIN_ARM( 9, 0, 6); _DEFPIN_ARM( 10, 0, 7);
+_DEFPIN_ARM( 12, 0, 2); _DEFPIN_ARM( 13, 0, 17);
 
 #define HAS_HARDWARE_PIN_SUPPORT 1
 
