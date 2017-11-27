@@ -65,8 +65,6 @@ public:
 // Actual pin definitions
 #if defined(ADAFRUIT_CIRCUITPLAYGROUND_M0)
 
-#pragma message "FastLED Adafruit CircuitPlaygroundExpress"
-
 #define MAX_PIN 10
 _DEFPIN_ARM( 0, 1, 9); _DEFPIN_ARM( 1, 1, 8); _DEFPIN_ARM( 2, 1, 2); _DEFPIN_ARM( 3, 1, 3); 
 _DEFPIN_ARM( 6, 0, 5); _DEFPIN_ARM( 8, 1, 23); _DEFPIN_ARM( 9, 0, 6); _DEFPIN_ARM( 10, 0, 7);
@@ -75,8 +73,6 @@ _DEFPIN_ARM( 12, 0, 2); _DEFPIN_ARM( 13, 0, 17);
 #define HAS_HARDWARE_PIN_SUPPORT 1
 
 #elif defined(ARDUINO_SAMD_ZERO)
-
-#pragma message "FastLED SAMD Zero "
 
 #define MAX_PIN 42
 _DEFPIN_ARM( 0,0,10); _DEFPIN_ARM( 1,0,11); _DEFPIN_ARM( 2,0, 8); _DEFPIN_ARM( 3,0, 9);
