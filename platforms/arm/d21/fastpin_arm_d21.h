@@ -63,7 +63,18 @@ public:
 #define _DEFPIN_ARM(PIN, L, BIT) template<> class FastPin<PIN> : public _ARMPIN<PIN, BIT, 1 << BIT, L> {};
 
 // Actual pin definitions
-#if defined(ARDUINO_SAMD_ZERO)
+#if defined(ADAFRUIT_CIRCUITPLAYGROUND_M0)
+
+#pragma message "FastLED Adafruit CircuitPlaygroundExpress"
+
+#define MAX_PIN 3
+_DEFPIN_ARM( 6, 0, 5); _DEFPIN_ARM( 8, 1, 23); _DEFPIN_ARM( 9, 0, 6);
+
+#define HAS_HARDWARE_PIN_SUPPORT 1
+
+#elif defined(ARDUINO_SAMD_ZERO)
+
+#pragma message "FastLED SAMD Zero "
 
 #define MAX_PIN 42
 _DEFPIN_ARM( 0,0,10); _DEFPIN_ARM( 1,0,11); _DEFPIN_ARM( 2,0, 8); _DEFPIN_ARM( 3,0, 9);
